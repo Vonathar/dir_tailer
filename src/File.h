@@ -33,13 +33,6 @@ class File {
   string get_name ();
 
   /**
-   * Returns the first known size for this file.
-   *
-   * @return the initial size.
-   */
-  unsigned long long get_initial_size ();
-
-  /**
    * Returns the most recent known size for this file.
    *
    * @return the current size.
@@ -57,6 +50,11 @@ class File {
    * Adds the current size of this file to the history.
    */
   void update_size_history ();
+
+  /**
+   * Prints the difference of this file's size.
+   */
+  void print_diff ();
 };
 
 #endif
