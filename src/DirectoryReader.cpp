@@ -6,7 +6,7 @@ using std::cout;
 using std::endl;
 using std::filesystem::directory_iterator;
 
-vector<File> DirectoryReader::read_all_files (const string &dir_path)
+vector<File> DirectoryReader::get_all_files (const string &dir_path)
 {
   vector<File> files;
   for (const auto &entry : directory_iterator (dir_path))

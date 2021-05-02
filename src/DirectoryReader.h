@@ -20,7 +20,7 @@ class DirectoryReader {
    * @param dir_path the path to the directory.
    * @return the files found in the directory.
    */
-  vector<File> read_all_files (const string &dir_path);
+  vector<File> get_all_files (const string &dir_path);
 };
 
 #endif//_DIRECTORYREADER_H_
